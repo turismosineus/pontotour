@@ -478,7 +478,8 @@ footer.site{border-top:1px solid var(--line);padding:44px 0 108px}
     flex:0 0 auto;white-space:nowrap}
   .rowtxt ul.mini strong{font-size:13.5px}
   .rowtxt ul.mini span{display:none}
-  .mapa{height:130px;max-width:none;margin:0;border-radius:0;border-left:0;border-right:0}
+  .mapa{height:210px;max-width:none;margin:14px 14px 0;border-radius:14px;border:1px solid var(--line);
+    box-shadow:0 10px 24px -20px rgba(11,36,64,.6)}
   .acciones{gap:14px;margin-top:12px;flex-direction:column;align-items:flex-start}
   .swipe-hint{display:flex;align-items:center;gap:8px;justify-content:center;margin-top:14px;
     font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
@@ -1574,15 +1575,15 @@ function renderData(){
   sel.innerHTML = EXP.map((x,i)=>`<option value="${i}">${esc(x[lang].t)}</option>`).join("")
     + `<option value="other">${esc(T[lang]["ct.optOther"])}</option>`;
   if(keep>=0) sel.selectedIndex=keep;
+  // primero se dibuja TODO, recién después se activan animaciones, carruseles y mapas
+  renderTips();
+  renderServicios();
+  renderTestimonios();
+  renderTicker();
   applyPhotos();
   observeReveals();
   setupCarousels();
   cargarMapas();
-  renderTicker();
-  renderTips();
-  renderServicios();
-  renderTestimonios();
-  applyPhotos();
 }
 
 function setLang(l){
