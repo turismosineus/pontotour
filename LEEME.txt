@@ -1,12 +1,13 @@
-PONTO TOUR — SITIO WEB
-======================
+JEITO MIAMI — SITIO WEB
+=======================
 
 CONTENIDO DE LA CARPETA (todo en un solo nivel, sin subcarpetas)
 ------------------------------------------------------------------
 index.html            Pagina en espanol (la principal)
 pt.html               Pagina en portugues
 en.html               Pagina en ingles
-*.jpg / logo.png      Todas las fotos y el logo
+*.jpg / logo.webp     Todas las fotos y el logo (logo-completo.webp es la copia
+                      que usan la animacion de entrada y el pie)
 favicon.png           Icono de la pestana del navegador
 apple-touch-icon.png  Icono para celulares
 robots.txt            Permiso para que Google indexe el sitio
@@ -30,8 +31,10 @@ Se ve asi:
 2) IG_URL — FALTA. Poné el link de tu Instagram.
    Ejemplo: https://instagram.com/pontotour
 
-3) EMAIL — ya esta puesto pontotour@gmail.com.
-   Cambialo solo si queres recibir las consultas en otra casilla.
+3) EMAIL — sigue puesto pontotour@gmail.com porque es la casilla que existe.
+   Cuando crees la nueva (por ejemplo jeitomiami@gmail.com), cambiala
+   aca Y en el texto de la seccion Contacto (busca "pontotour@gmail.com",
+   aparece 2 veces en cada archivo).
 
 Guarda los tres archivos. Listo, no hay que crear ninguna cuenta.
 
@@ -41,13 +44,13 @@ EL BOTON VERDE DE WHATSAPP
 El boton flotante abre el chat con un mensaje ya escrito, en el idioma
 en que la persona esta navegando:
 
-  Espanol    ¡Hola! Vengo desde la web de Ponto Tour y queria consultar
+  Espanol    ¡Hola! Vengo desde la web de Jeito Miami y queria consultar
              por los paseos en Miami. Mi nombre es ...
 
-  Portugues  Ola! Vim pelo site da Ponto Tour e gostaria de saber mais
+  Portugues  Ola! Vim pelo site da Jeito Miami e gostaria de saber mais
              sobre os passeios em Miami. Meu nome e ...
 
-  Ingles     Hi! I came from the Ponto Tour website and I'd like to know
+  Ingles     Hi! I came from the Jeito Miami website and I'd like to know
              more about the tours in Miami. My name is ...
 
 La persona solo completa su nombre y toca enviar.
@@ -81,11 +84,18 @@ Con la primera que pegues, la seccion aparece sola. Las frases se
 muestran tal cual las escribas, en el idioma en que te las dieron.
 
 
-LA PORTADA ROTATIVA Y LA CINTA DE AVISOS
-----------------------------------------
-La portada pasa sola entre 4 destacados cada 6 segundos (se frena
-cuando el mouse esta encima, y en el celular se pasa con el dedo).
-Para cambiar los textos: busca "s2.title", "s3.title", "s4.title".
+LA PORTADA CON VIDEO Y LA CINTA DE AVISOS
+-----------------------------------------
+De fondo de la portada corre un video sin sonido, en loop:
+  portada.mp4         version para computadora (1920x1080)
+  portada-movil.mp4   version liviana para celular (1280x720)
+  portada-poster.jpg  imagen que se ve mientras carga
+Para cambiar el video, reemplaza esos archivos con el mismo nombre
+(idealmente sin audio, de 15 a 30 segundos, de menos de 8 MB).
+Si el video no carga, aparecen solas las fotos de antes.
+
+Encima del video pasan 4 textos destacados cada 6 segundos.
+Para cambiarlos: busca "s2.title", "s3.title", "s4.title".
 
 La cinta azul que corre debajo tiene 8 frases por idioma. Para
 cambiarlas busca "ticker" en cada archivo .html.
@@ -109,6 +119,8 @@ los dos numeros que aparecen arriba de todo.
 SUBIRLO A GITHUB PAGES (gratis, sin limites)
 --------------------------------------------
 El sitio vive en el repositorio github.com/turismosineus/pontotour
+(si lo renombras a "jeitomiami" desde Settings, el link pasa a ser
+https://turismosineus.github.io/jeitomiami/ y todo lo demas sigue igual)
 
 Para actualizar:
 1. Entra al repositorio -> boton "Add file" -> "Upload files".
@@ -141,7 +153,7 @@ SUBIRLO A TU HOSTING Y DOMINIO PROPIO
 CUANDO TENGAS EL DOMINIO
 ------------------------
 En los tres index.html, busca "TU-DOMINIO.com" y reemplazalo por tu
-dominio real (por ejemplo pontotour.com). Aparece unas 8 veces en cada
+dominio real (por ejemplo jeitomiami.com). Aparece unas 8 veces en cada
 archivo, en la parte de arriba.
 
 Eso hace que cuando compartas el link por WhatsApp o Facebook aparezca
@@ -153,7 +165,7 @@ Tambien reemplazalo en robots.txt y en sitemap.xml.
 
 CAMBIAR UNA FOTO MAS ADELANTE
 -----------------------------
-Las fotos estan en la carpeta img/ con nombres claros. Para cambiar
+Las fotos estan en la misma carpeta, con nombres claros. Para cambiar
 alguna, subi la nueva con EXACTAMENTE el mismo nombre de archivo y se
 reemplaza sola. Recomendado: fotos horizontales, de 1200 pixeles de
 ancho aproximadamente, en formato .jpg.
