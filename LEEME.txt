@@ -84,8 +84,8 @@ Con la primera que pegues, la seccion aparece sola. Las frases se
 muestran tal cual las escribas, en el idioma en que te las dieron.
 
 
-LA PORTADA CON VIDEO Y LA CINTA DE AVISOS
------------------------------------------
+LA PORTADA CON VIDEO
+--------------------
 De fondo de la portada corre un video sin sonido, en loop:
   portada.mp4         version para computadora (1920x1080)
   portada-movil.mp4   version liviana para celular (1280x720)
@@ -96,9 +96,6 @@ Si el video no carga, aparecen solas las fotos de antes.
 
 Encima del video pasan 4 textos destacados cada 6 segundos.
 Para cambiarlos: busca "s2.title", "s3.title", "s4.title".
-
-La cinta azul que corre debajo tiene 8 frases por idioma. Para
-cambiarlas busca "ticker" en cada archivo .html.
 
 
 LOS MAPAS DE LAS EXPERIENCIAS

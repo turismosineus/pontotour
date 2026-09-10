@@ -66,12 +66,12 @@ h1,h2,h3{margin:0;font-family:var(--f-display);font-weight:400;line-height:1.02;
 html.no-intro .splash{display:none}
 .brand{perspective:700px}
 .brand img{opacity:0;transform-style:preserve-3d;will-change:transform;
-  filter:drop-shadow(0 1px 0 rgba(0,35,76,.20)) drop-shadow(0 2px 0 rgba(0,35,76,.16)) drop-shadow(0 3px 0 rgba(0,35,76,.10)) drop-shadow(0 12px 16px rgba(0,35,76,.28));
+  filter:drop-shadow(0 1px 0 rgba(0,35,76,.10)) drop-shadow(0 2px 0 rgba(0,35,76,.06)) drop-shadow(0 8px 12px rgba(0,35,76,.12));
   animation:brand-in .8s cubic-bezier(.22,.61,.36,1) 2.05s forwards, logo-idle 8s ease-in-out 3s infinite;
   transition:transform .35s ease,filter .35s ease}
 @keyframes logo-idle{0%,100%{transform:rotateY(-7deg) rotateX(3deg)}50%{transform:rotateY(9deg) rotateX(-3deg)}}
 .brand.tilting img{animation:none;opacity:1}
-.brand:hover img{filter:drop-shadow(0 1px 0 rgba(0,35,76,.20)) drop-shadow(0 2px 0 rgba(0,35,76,.16)) drop-shadow(0 4px 0 rgba(0,35,76,.10)) drop-shadow(0 18px 22px rgba(0,35,76,.34))}
+.brand:hover img{filter:drop-shadow(0 1px 0 rgba(0,35,76,.10)) drop-shadow(0 2px 0 rgba(0,35,76,.06)) drop-shadow(0 12px 16px rgba(0,35,76,.16))}
 html.no-intro .brand img{animation:logo-idle 8s ease-in-out 1s infinite;opacity:1}
 @keyframes brand-in{from{opacity:0;transform:translateX(-14px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.splash{display:none}.brand img{animation:none;opacity:1;transform:none}}
@@ -385,7 +385,7 @@ select{padding-left:0}
 /* footer */
 footer.site{border-top:1px solid var(--line);padding:44px 0 108px}
 .foot{display:flex;gap:30px;flex-wrap:wrap;justify-content:space-between;align-items:flex-start}
-.foot img{height:112px;filter:drop-shadow(0 1px 0 rgba(0,35,76,.18)) drop-shadow(0 2px 0 rgba(0,35,76,.12)) drop-shadow(0 10px 14px rgba(0,35,76,.22))}
+.foot img{height:112px;filter:drop-shadow(0 1px 0 rgba(0,35,76,.08)) drop-shadow(0 8px 12px rgba(0,35,76,.10))}
 .foot p{color:var(--muted);font-size:14px;max-width:32ch;margin-top:12px}
 .demo-note{margin-top:34px;padding-top:18px;border-top:1px solid var(--line);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 .wa{position:fixed;right:22px;bottom:22px;z-index:50;background:var(--ink);color:var(--paper);padding:14px 20px;border-radius:2px;
@@ -667,11 +667,21 @@ footer.site{border-top:1px solid var(--line);padding:44px 0 108px}
       <div class="slide-count" id="slideCount" aria-hidden="true">01 / 04</div>
     </div>
 
-    <!-- cinta de avisos -->
-    <div class="ticker" aria-hidden="true">
-      <div class="ticker-track" id="tickerTrack"></div>
-    </div>
   </section>
+
+  <!-- ================= SERVICIOS ================= -->
+  <section id="sec-servicios" class="wrap section">
+      <div class="intro reveal">
+        <div>
+          <span class="kicker" data-i18n="sv.kicker">Servicios</span>
+          <h2><span data-i18n="sv.title">Todo lo que resolvemos </span><span class="serif-i" data-i18n="sv.titleEm">por vos</span></h2>
+        </div>
+        <p data-i18n="sv.sub">Las experiencias son la parte linda. Esto es lo que hace que salgan bien.</p>
+      </div>
+      <div class="servicios-wrap reveal"><div class="servicios" id="serviciosGrid"></div></div>
+  </section>
+
+  <hr class="sep">
 
   <!-- ================= QUIENES SOMOS ================= -->
   <section id="sec-quienes" class="wrap section">
@@ -694,20 +704,6 @@ footer.site{border-top:1px solid var(--line);padding:44px 0 108px}
         <div class="col reveal"><span class="num">III</span><h3 data-i18n="home.p3t">Tres idiomas</h3><p data-i18n="home.p3p">Te atendemos y te acompañamos en español, portugués o inglés.</p></div>
       </div>
       <div class="dots" data-carousel="homeCols"></div>
-  </section>
-
-  <hr class="sep">
-
-  <!-- ================= SERVICIOS ================= -->
-  <section id="sec-servicios" class="wrap section">
-      <div class="intro reveal">
-        <div>
-          <span class="kicker" data-i18n="sv.kicker">Servicios</span>
-          <h2><span data-i18n="sv.title">Todo lo que resolvemos </span><span class="serif-i" data-i18n="sv.titleEm">por vos</span></h2>
-        </div>
-        <p data-i18n="sv.sub">Las experiencias son la parte linda. Esto es lo que hace que salgan bien.</p>
-      </div>
-      <div class="servicios-wrap reveal"><div class="servicios" id="serviciosGrid"></div></div>
   </section>
 
   <hr class="sep">
